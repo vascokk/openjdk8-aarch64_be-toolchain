@@ -1,0 +1,14 @@
+prefix=/home/vasco/work/openjdk/toolchain/aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu
+exec_prefix=/home/vasco/work/openjdk/toolchain/aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu
+libdir=/home/vasco/work/openjdk/toolchain/aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/lib
+includedir=/home/vasco/work/openjdk/toolchain/aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/usr/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 20.0.14
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

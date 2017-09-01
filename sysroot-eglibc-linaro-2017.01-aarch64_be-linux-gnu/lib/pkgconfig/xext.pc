@@ -1,0 +1,12 @@
+prefix=/opt/gfx-test
+exec_prefix=${prefix}
+libdir=/home/vasco/work/openjdk/toolchain/gcc6-aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/lib
+includedir=/home/vasco/work/openjdk/toolchain/gcc6-aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/usr/include
+
+Name: Xext
+Description: Misc X Extension Library
+Version: 1.3.3
+Requires: xextproto
+Requires.private: x11
+Cflags: -I${includedir}
+Libs: -L${libdir} -lXext

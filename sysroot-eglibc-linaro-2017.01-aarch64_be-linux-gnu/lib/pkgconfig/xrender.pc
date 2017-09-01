@@ -1,0 +1,12 @@
+prefix=/opt/gfx-test
+exec_prefix=${prefix}
+libdir=/home/vasco/work/openjdk/toolchain/gcc6-aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/lib
+includedir=/home/vasco/work/openjdk/toolchain/gcc6-aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/usr/include
+
+Name: Xrender
+Description: X Render Library
+Version: 0.9.10
+Requires: xproto renderproto >= 0.9 x11
+Requires.private: x11
+Cflags: -I${includedir}
+Libs: -L${libdir} -lXrender

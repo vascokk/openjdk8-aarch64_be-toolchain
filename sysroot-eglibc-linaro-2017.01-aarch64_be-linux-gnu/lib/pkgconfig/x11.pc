@@ -1,0 +1,15 @@
+prefix=/opt/gfx-test
+exec_prefix=${prefix}
+libdir=/home/vasco/work/openjdk/toolchain/gcc6-aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/lib
+includedir=/home/vasco/work/openjdk/toolchain/gcc6-aarch64/sysroot-glibc-linaro-2.23-2017.05-aarch64_be-linux-gnu/usr/include
+
+xthreadlib=-lpthread
+
+Name: X11
+Description: X Library
+Version: 1.6.5
+Requires: xproto kbproto
+Requires.private: xcb >= 1.11.1
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lX11
+Libs.private: -lpthread
